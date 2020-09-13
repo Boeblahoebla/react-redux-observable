@@ -8,6 +8,8 @@ const counterStep = 1
 
 // Map the Redux state to props
 const mapStateToProps = (state) => {
+  console.log('counter container :: in mapStateToProps');
+
   return {
     counter: state.counterReducer
   }
@@ -15,6 +17,8 @@ const mapStateToProps = (state) => {
 
 // Map the Redux actions to props
 const mapDispatchToProps = (dispatch) => {
+  console.log('counter container :: in mapDispatchToProps')
+
   return {
     increment: () => {
       dispatch(updateCounter(counterStep))

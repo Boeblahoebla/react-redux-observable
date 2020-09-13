@@ -5,11 +5,13 @@ const initialState = 0;
 export const counterReducer = (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_COUNTER_REQUEST:
-      console.log('UPDATE_COUNTER_REQUESTED');
+      console.log('counter reducer :: UPDATE_COUNTER_REQUEST');
+
       return state;
 
     case UPDATE_COMPLETE:
-      console.log('UPDATE_COUNTER_COMPLETED');
+      console.log('counter reducer :: UPDATE_COUNTER_COMPLETED');
+
       return state + action.payload;
 
     default:

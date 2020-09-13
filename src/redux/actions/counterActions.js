@@ -10,6 +10,10 @@ export const UPDATE_COMPLETE = 'UPDATE_COMPLETE'
  */
 
 export function updateCounter(counterStep) {
-  console.log('in updateCounter action');
-  return { type: UPDATE_COUNTER_REQUEST, payload: counterStep }
+  console.log('counter actions :: in updateCounter action');
+
+  return {
+    type: UPDATE_COUNTER_REQUEST,
+    payload: counterStep
+  }
 }
